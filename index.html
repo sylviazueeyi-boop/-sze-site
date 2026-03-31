@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="OfcImUeOK-GRBR6KdbJxX5CvrnCBpInvyHiDcmaDa8U">
+<title>SZE Hotel Consulting — Direction stratégique externalisée</title>
+<meta name="description" content="SZE Hotel Consulting — Stratégie commerciale, marketing et expérience client pour hôteliers indépendants 3 à 5 étoiles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1d2e;--navy-mid:#122237;--navy-lt:#162840;--dark:#202020;--gold:#c6a978;--offwhite:#fbf9f5;--muted:rgba(251,249,245,.70);--lato:'Lato',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--offwhite);font-family:var(--lato);font-weight:300;line-height:1.75;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 4rem;transition:background .4s,border-bottom .4s}
+nav.scrolled{background:rgba(15,29,46,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(198,169,120,.12)}
+.nav-logo{height:32px;width:auto}
+.nav-links{display:flex !important;flex-direction:row !important;gap:2.8rem;align-items:center}
+.nav-links a{font-size:.67rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);transition:color .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--offwhite)}
+.nav-cta{font-size:.65rem;font-weight:300;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(251,249,245,.3);color:var(--offwhite);padding:.6rem 1.5rem;transition:background .25s,border-color .25s;white-space:nowrap}
+.nav-cta:hover{background:rgba(251,249,245,.08);border-color:var(--offwhite)}
+
+#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10rem 2rem 8rem;background:var(--navy);position:relative;overflow:hidden}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(198,169,120,.1);pointer-events:none}
+.ring-1{width:540px;height:540px;top:-140px;right:-140px}
+.ring-2{width:330px;height:330px;top:-60px;right:-60px}
+.deco-bar{position:absolute;bottom:110px;left:0;width:100px;height:1px;background:linear-gradient(to right,rgba(198,169,120,.5),transparent)}
+.hero-eyebrow{font-size:.62rem;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;opacity:0;animation:fadeUp .8s .2s forwards}
+.hero-h1{font-weight:300;font-size:clamp(2rem,5vw,4rem);line-height:1.22;max-width:760px;color:var(--offwhite);opacity:0;animation:fadeUp .9s .4s forwards}
+.em{color:var(--gold);font-style:italic}
+.hero-rule{width:36px;height:1px;background:var(--gold);margin:2.6rem auto;opacity:0;animation:fadeUp .7s .6s forwards}
+.hero-sub{font-size:.92rem;font-weight:300;color:var(--muted);max-width:580px;line-height:1.9;opacity:0;animation:fadeUp .9s .75s forwards;text-align:center}
+.hero-ctas{display:flex;flex-direction:column;align-items:center;gap:1rem;margin-top:3rem;opacity:0;animation:fadeUp .9s .95s forwards}
+.btn-gold{background:var(--gold);color:var(--navy);padding:.9rem 2.4rem;font-size:.67rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;display:inline-block;transition:opacity .2s,transform .2s}
+.btn-gold:hover{opacity:.85;transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(251,249,245,.25);color:var(--muted);padding:.9rem 2.4rem;font-size:.67rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;display:inline-block;transition:border-color .25s,color .25s,transform .2s}
+.btn-ghost:hover{border-color:var(--offwhite);color:var(--offwhite);transform:translateY(-2px)}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fadeUp 1s 1.5s forwards;pointer-events:none}
+.scroll-cue span{font-size:.52rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(251,249,245,.2)}
+.scroll-cue-bar{width:1px;height:32px;background:linear-gradient(to bottom,rgba(198,169,120,.3),transparent)}
+
+section{padding:7rem 2rem}
+.wrap{max-width:1080px;margin:0 auto}
+.s-lbl{font-size:.6rem;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.s-h2{font-weight:300;font-size:clamp(1.7rem,3.5vw,2.65rem);line-height:1.25;color:var(--offwhite);margin-bottom:.8rem}
+.s-rule{width:28px;height:1px;background:var(--gold);margin-bottom:2.5rem}
+
+#enjeux{background:var(--navy-mid);border-top:1px solid rgba(198,169,120,.08);border-bottom:1px solid rgba(198,169,120,.08)}
+.enjeux-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:3.5rem;background:rgba(198,169,120,.08)}
+.ej-card{background:var(--navy-mid);padding:2.8rem 2.2rem;position:relative;transition:background .3s}
+.ej-card:hover{background:rgba(15,29,46,.6)}
+.ej-card::before{content:'';position:absolute;top:0;left:0;width:24px;height:1px;background:var(--gold)}
+.ej-num{font-size:2.5rem;font-weight:300;color:rgba(198,169,120,.09);line-height:1;margin-bottom:1rem}
+.ej-title{font-size:.7rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.ej-text{font-size:.86rem;font-weight:300;color:var(--muted);line-height:1.82}
+
+#mission{background:var(--navy-lt)}
+.mission-layout{display:grid;grid-template-columns:300px 1fr;gap:6rem;align-items:start}
+.photo-frame{position:relative;display:inline-block}
+.photo-frame::after{content:'';position:absolute;top:16px;left:16px;right:-16px;bottom:-16px;border:1px solid rgba(198,169,120,.28);pointer-events:none}
+.photo-img{width:100%;max-width:290px;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;position:relative;z-index:1}
+.identity{margin-top:1.8rem}
+.identity strong{display:block;font-size:.9rem;font-weight:400;color:var(--offwhite)}
+.identity span{font-size:.72rem;font-weight:300;color:var(--gold);letter-spacing:.08em}
+.mission-body{font-size:.91rem;font-weight:300;color:var(--muted);line-height:1.95}
+.mission-body p{margin-bottom:1.4rem}
+.exergue-block{margin:2.5rem 0;padding-left:1.6rem;border-left:1px solid rgba(198,169,120,.4);font-style:italic;font-weight:300;font-size:1rem;color:var(--muted);line-height:1.7}
+
+#solutions{background:var(--navy)}
+.sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem}
+.sol-card{border:1px solid rgba(198,169,120,.12);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.sol-card::before{content:'';position:absolute;top:-1px;left:0;width:0;height:1px;background:var(--gold);transition:width .4s}
+.sol-card:hover::before{width:100%}
+.sol-card:hover{border-color:rgba(198,169,120,.3);transform:translateY(-3px)}
+.sol-ico{width:30px;height:30px;border:1px solid rgba(198,169,120,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.6rem}
+.sol-ico svg{width:13px;height:13px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.sol-title{font-size:.68rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.sol-text{font-size:.85rem;font-weight:300;color:var(--muted);line-height:1.85}
+
+#resultats{background:var(--navy-mid);border-top:1px solid rgba(198,169,120,.08)}
+.resultats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:3.5rem;background:rgba(198,169,120,.08)}
+.res-card{background:var(--navy-mid);padding:2.8rem 2.2rem;position:relative}
+.res-card::before{content:'';position:absolute;top:0;left:0;width:24px;height:1px;background:var(--gold)}
+.res-val{font-size:2.2rem;font-weight:300;color:var(--offwhite);line-height:1.1;margin-bottom:.4rem}
+.res-val span{font-size:1rem;color:var(--gold)}
+.res-label{font-size:.7rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.res-sublabel{font-size:.68rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--offwhite);margin-bottom:.8rem;opacity:.7}
+.res-detail{font-size:.82rem;font-weight:300;color:var(--muted);line-height:1.75}
+.res-context{margin-top:2.5rem;padding:1.8rem 2.2rem;border:1px solid rgba(198,169,120,.1);font-size:.78rem;font-weight:300;color:var(--muted);font-style:italic;line-height:1.7}
+
+#temoignages{background:var(--navy-lt)}
+.temoignages-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3.5rem}
+.temo-card{border:1px solid rgba(198,169,120,.14);padding:2.5rem;position:relative;transition:border-color .3s}
+.temo-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,var(--gold),transparent)}
+.temo-card:hover{border-color:rgba(198,169,120,.3)}
+.temo-quote{font-size:.88rem;font-weight:300;color:var(--muted);line-height:1.85;font-style:italic;margin-bottom:1.8rem;padding-left:1.2rem;border-left:1px solid rgba(198,169,120,.3)}
+.temo-author strong{display:block;font-size:.82rem;font-weight:400;color:var(--offwhite)}
+.temo-author span{font-size:.7rem;font-weight:300;color:var(--gold)}
+
+#partenaires{background:var(--navy);border-top:1px solid rgba(198,169,120,.08)}
+.partenaires-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:3.5rem;background:rgba(198,169,120,.08)}
+.part-card{background:var(--navy);padding:2rem 2.2rem}
+.part-category{font-size:.6rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.part-items{font-size:.85rem;font-weight:300;color:var(--muted);line-height:1.9}
+
+#offres{background:var(--navy-mid)}
+.offres-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3.5rem}
+.offre-card{border:1px solid rgba(198,169,120,.14);padding:3rem 2.5rem;background:rgba(15,29,46,.5);position:relative;transition:border-color .3s,background .3s}
+.offre-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,var(--gold),transparent)}
+.offre-card:hover{border-color:rgba(198,169,120,.32);background:rgba(15,29,46,.7)}
+.offre-tag{display:inline-block;font-size:.56rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(198,169,120,.3);color:var(--muted);padding:.28rem .9rem;margin-bottom:1.5rem}
+.offre-name{font-size:1.3rem;font-weight:300;color:var(--offwhite);margin-bottom:.3rem;line-height:1.3}
+.offre-sub{font-size:.72rem;font-weight:300;font-style:italic;color:var(--gold);margin-bottom:2rem}
+.offre-list{list-style:none;margin-bottom:2.5rem;border-top:1px solid rgba(198,169,120,.1)}
+.offre-list li{font-size:.83rem;font-weight:300;color:var(--muted);padding:.65rem 0;border-bottom:1px solid rgba(198,169,120,.08);display:flex;gap:.8rem;align-items:flex-start}
+.offre-list li::before{content:'·';color:var(--gold);flex-shrink:0;font-size:1.2rem;line-height:1.4}
+.offre-price{font-size:1.75rem;font-weight:300;color:var(--offwhite)}
+.offre-note{font-size:.67rem;font-weight:300;color:var(--muted);margin-top:.4rem;font-style:italic}
+.process-strip{margin-top:3.5rem;border:1px solid rgba(198,169,120,.1);display:grid;grid-template-columns:repeat(3,1fr)}
+.ps-step{padding:2.5rem 2.2rem;border-right:1px solid rgba(198,169,120,.1)}
+.ps-step:last-child{border-right:none}
+.ps-num{font-size:2.8rem;font-weight:300;color:rgba(198,169,120,.08);line-height:1;margin-bottom:.6rem}
+.ps-title{font-size:.62rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.ps-text{font-size:.82rem;font-weight:300;color:var(--muted);line-height:1.75}
+
+#contact{background:var(--navy);border-top:1px solid rgba(198,169,120,.08);padding:8rem 2rem;text-align:center}
+.contact-wrap{max-width:580px;margin:0 auto}
+.contact-h2{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:300;color:var(--offwhite);line-height:1.22;margin-bottom:1.5rem}
+.contact-sub{font-size:.9rem;font-weight:300;color:var(--muted);line-height:1.88;margin-bottom:3rem}
+.contact-links{display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:2.5rem}
+.c-link{display:flex;align-items:center;gap:.9rem;font-size:.84rem;font-weight:300;color:var(--muted);transition:color .2s}
+.c-link:hover{color:var(--offwhite)}
+.c-link svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:1.4;flex-shrink:0}
+.contact-zone{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(198,169,120,.1)}
+.cz-lbl{font-size:.58rem;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.5rem}
+.contact-zone p{font-size:.82rem;font-weight:300;color:var(--muted)}
+
+footer{background:var(--navy);border-top:1px solid rgba(198,169,120,.15)}
+.ft-top{padding:4rem 4rem 3rem;display:flex;flex-direction:column;align-items:center;text-align:center;border-bottom:1px solid rgba(198,169,120,.1)}
+.ft-logo{width:200px;height:auto;opacity:.9;margin-bottom:1.2rem}
+.ft-baseline{font-size:.68rem;font-weight:300;font-style:italic;color:var(--muted);letter-spacing:.08em}
+.ft-mid{padding:2.5rem 4rem;display:flex;align-items:start;justify-content:space-between;gap:2rem;border-bottom:1px solid rgba(198,169,120,.08)}
+
+
+
+.ft-address{text-align:center;font-size:.78rem;font-weight:300;color:var(--muted);line-height:1.9}
+.ft-address strong{display:block;font-size:.58rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.ft-social{display:flex;flex-direction:column;align-items:flex-end;gap:.8rem}
+.ft-social a{display:flex;align-items:center;gap:.7rem;font-size:.72rem;font-weight:300;color:var(--muted);transition:color .2s}
+.ft-social a:hover{color:var(--gold)}
+.ft-social svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.ft-bottom{padding:1.2rem 4rem;display:flex;justify-content:center}
+
+
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;background:none;border:none;z-index:300}
+.hamburger span{display:block;width:22px;height:1px;background:var(--offwhite);transition:transform .3s,opacity .3s}
+.hamburger.active span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--navy);z-index:250;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.mobile-overlay.open{display:flex}
+.mobile-overlay a{font-size:1rem;font-weight:300;letter-spacing:.22em;text-transform:uppercase;color:var(--offwhite)}
+.mobile-overlay .btn-gold{font-size:.72rem;margin-top:1rem}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.18s}.d3{transition-delay:.28s}
+
+@media(max-width:960px){
+nav{padding:1.2rem 1.8rem}
+.nav-links{display:none !important}
+.hamburger{display:flex}
+.nav-cta{display:none}
+.mission-layout{grid-template-columns:1fr;gap:3rem}
+.photo-img{max-width:240px}
+.sol-grid,.enjeux-grid,.resultats-grid,.partenaires-grid{grid-template-columns:1fr}
+.offres-grid,.temoignages-grid{grid-template-columns:1fr}
+.process-strip{grid-template-columns:1fr}
+.ps-step{border-right:none;border-bottom:1px solid rgba(198,169,120,.1)}
+.ps-step:last-child{border-bottom:none}
+.ft-mid{grid-template-columns:1fr;text-align:center}.ft-social{align-items:center}
+.ft-top,.ft-mid,.ft-bottom{padding-left:1.4rem;padding-right:1.4rem}
+}
+@media(max-width:600px){section{padding:5rem 1.4rem}#contact{padding:5rem 1.4rem}}
+
+/* ── COOKIE BANNER ──────────────────────────────────── */
+#cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--navy-mid);border-top:1px solid rgba(198,169,120,.2);padding:1.4rem 3rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+#cookie-banner p{font-size:.78rem;font-weight:300;color:var(--muted);line-height:1.7;max-width:680px}
+#cookie-banner p a{color:var(--gold);text-decoration:underline;cursor:pointer}
+.cookie-btns{display:flex;gap:.8rem;flex-shrink:0}
+.btn-accept{background:var(--gold);color:var(--navy);padding:.55rem 1.4rem;font-size:.65rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;border:none;cursor:pointer;transition:opacity .2s}
+.btn-accept:hover{opacity:.85}
+.btn-refuse{background:transparent;color:var(--muted);padding:.55rem 1.4rem;font-size:.65rem;font-weight:300;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(251,249,245,.2);cursor:pointer;transition:border-color .2s,color .2s}
+.btn-refuse:hover{border-color:var(--offwhite);color:var(--offwhite)}
+
+/* ── MODALES ─────────────────────────────────────────── */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:9998;background:rgba(9,21,38,.92);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:2rem}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--navy-mid);border:1px solid rgba(198,169,120,.15);max-width:700px;width:100%;max-height:85vh;overflow-y:auto;padding:3rem;position:relative}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,var(--gold),transparent)}
+.modal-close{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer;line-height:1;transition:color .2s}
+.modal-close:hover{color:var(--offwhite)}
+.modal-title{font-size:1.2rem;font-weight:300;color:var(--offwhite);margin-bottom:.5rem}
+.modal-rule{width:28px;height:1px;background:var(--gold);margin-bottom:2rem}
+.modal-body{font-size:.82rem;font-weight:300;color:var(--muted);line-height:1.85}
+.modal-body h3{font-size:.7rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:1.8rem 0 .6rem}
+.modal-body p{margin-bottom:1rem}
+.modal-body a{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgODQxLjg5IDU5NS4yOCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDMwLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDEzNikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBmb250LWZhbWlseTogUGV0YWxhUHJvTGlnaHQsICdQZXRhbGEgUHJvJzsKICAgICAgICBmb250LXNpemU6IDUxLjFweDsKICAgICAgfQoKICAgICAgLnN0MCwgLnN0MSB7CiAgICAgICAgZmlsbDogI2M2YTk3ODsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHRleHQgY2xhc3M9InN0MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM3Ljk3IDQyMi41NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5TWkUgSE9URUwgQ09OU1VMVElORzwvdHNwYW4+PC90ZXh0PgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIzNjguMzcgMzQ0LjEzIDM2Ny45NiAzNDQuNzMgMzY4LjE3IDM0NC43MyAzNjguMzcgMzQ0LjEzIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDgzLjc4LDI2OC45OWM5Ljc3LDUuNSwxOC4yNiwxNy4wOSwxOC4yNiwxNy4wOWwxLjM2LTI3LjMzaC00OS44MmwtLjk4LDEuMTljMTEuNTcsMCwyMS40MSwzLjU2LDMxLjE5LDkuMDZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDI0LjM0LDI1My41NWwtMTYuODctMy40MmMtMTcuNTktMi44OC0zMC43OC03LjYyLTM5LjU3LTE0LjIyLTguOC02LjYxLTEzLjMzLTE2LjMzLTEzLjYxLTI5LjE2LDAtOS43NywyLjg5LTE4LjA1LDguNjYtMjQuODUsNS43Ny02Ljc5LDEzLjI1LTExLjY4LDIyLjQ2LTE0LjY1LDkuMjEtMi45NiwxOS4zLTQuNjksMzAuMy01LjE3LDExLS40NywyMS45OS4zNCwzMi45OSwyLjQ0LDExLDIuMTEsMjAuODksNS4yNywyOS42OCw5LjQ4LDguMjUsMy42NCwxNC45LDguNDgsMjAsMTQuNTEsNS4wOCw2LjAzLDcuOSwxMi40OSw4LjQ1LDE5LjM5di0zMy4wNGMtMjUuODMtMTEuMy01NC42OS0xNi40Ny04Ni41Ny0xNS41MS0yMC4wNi43Ny0zNy4zOCw0LjQxLTUxLjk0LDEwLjkxLTE0LjU2LDYuNTItMjQuNzMsMTUuNzEtMzAuNTEsMjcuNTktNy4xNSwxNC45NC01LjIyLDI4Ljc3LDUuNzcsNDEuNTEsMTEsMTIuNzQsMjcuMjEsMjEuMjIsNDguNjUsMjUuNDJsMTkuNDIsMy43OCw1LjctNi43NCw2Ljk5LTguMjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzY3Ljk2LDM0NC43M2wuNDItLjU5LDEzLjA3LTE1LjQxYy00Ljk3LTIuNTMtOC45Ny01LjYyLTEzLjQzLTguNmwtMTYuMDcsMTljMi45MiwyLjExLDYuMTgsMy45NSw5LjcsNS42aDYuMzFaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDczLjc1LDM0Mi4yN2MuMzYtLjMxLjY2LS42OSwxLjAxLTEuMDIiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00MjEuMzYsMjgxLjY2bDEzLjc4LTE2LjI0LDUxLjkzLTYxLjIyaC04Ni4xNmwtMTEuNzcsMjYuODZjNC4xMi03LjY3LDExLjMtMTMuODYsMjEuNTMtMTguNTgsMTAuMjMtNC43MSwyMS41NC03LjA3LDMzLjk0LTcuMDdoMjAuNDVsLTQwLjczLDQ4LjE0LDIuMi40NS0xMi42NiwxNC45OS0yLjIzLS40My04LjE2LDkuNjQtMzUuNDgsNDEuOTRjNC40NiwyLjk4LDguNDUsNi4wNiwxMy40Myw4LjZsMzkuOTItNDcuMDZaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjQyNi41NCAyNTQgNDI0LjM0IDI1My41NSA0MTcuMzUgMjYxLjgyIDQxMS42NSAyNjguNTUgNDEzLjg4IDI2OC45OSA0MjYuNTQgMjU0Ii8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzUxLjk0LDMzOS4xM2MtMy4zOC0yLjQ0LTYuMzYtNS4xOC04LjkzLTguMjMtNS4wOC02LjAzLTcuOS0xMi40OS04LjQ1LTE5LjM5djMzLjA0Yy4xNS4wNi4zLjEyLjQ1LjE4aDEyLjJsNC43NC01LjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzYxLjY1LDM0NC43M2MtMy41Mi0xLjY1LTYuNzktMy40OS05LjctNS42bC00Ljc0LDUuNmgxNC40NFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00ODYuNTcsMzE5LjM0Yy0xLjA0LDYuOTItMy43NCwxMi45OC04LjE1LDE4LjE3LTEuMTQsMS4zNC0yLjQsMi41NS0zLjY3LDMuNzQtLjM1LjMzLS42NS43LTEuMDEsMS4wMi0uNzUuNjYtMS41OSwxLjItMi4zOCwxLjgxLS4yOC4yMi0uNTcuNDQtLjg2LjY1aDEwLjk5YzEwLjExLTYuMDUsMTcuNDktMTMuNzUsMjIuMDctMjMuMTcuNTUtMS4xNS45NC0yLjI3LDEuMzgtMy40LTUuOC40NS0xMi4wNS44My0xOC4zOSwxLjE4WiIvPgogIDwvZz4KPC9zdmc+" alt="SZE Hotel Consulting" class="nav-logo">
+<div class="nav-links">
+<a href="#enjeux">Enjeux</a>
+<a href="#mission">Mission</a>
+<a href="#resultats">Résultats</a>
+<a href="#offres">Offres</a>
+<a href="#contact">Contact</a>
+</div>
+<a href="https://calendly.com/szehotelconsulting-direction-strategique/30min" target="_blank" class="nav-cta">Échange offert (30 min)</a>
+<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay">
+<a href="#enjeux" onclick="closeMenu()">Enjeux</a>
+<a href="#mission" onclick="closeMenu()">Mission</a>
+<a href="#resultats" onclick="closeMenu()">Résultats</a>
+<a href="#offres" onclick="closeMenu()">Offres</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
+<a href="https://calendly.com/szehotelconsulting-direction-strategique/30min" target="_blank" class="btn-gold" onclick="closeMenu()">Échange offert</a>
+</div>
+
+<section id="hero">
+<div class="ring ring-1"></div><div class="ring ring-2"></div><div class="deco-bar"></div>
+<p class="hero-eyebrow">Direction stratégique externalisée</p>
+<h1 class="hero-h1">L'hôtelier indépendant est trop dans l'hôtel<br><span class="em">pour voir l'hôtel.</span></h1>
+<div class="hero-rule"></div>
+<p class="hero-sub">SZE Hotel Consulting dote les établissements indépendants des leviers stratégiques des grandes chaînes : pilotage de la performance, acquisition directe et excellence du parcours client. Pour que vous puissiez vous concentrer pleinement sur vos équipes et vos clients.</p>
+<div class="hero-ctas">
+<a href="https://calendly.com/szehotelconsulting-direction-strategique/30min" target="_blank" class="btn-gold">Réserver votre échange stratégique</a>
+<a href="#offres" class="btn-ghost">Découvrir les offres</a>
+</div>
+<div class="scroll-cue"><span>Découvrir</span><div class="scroll-cue-bar"></div></div>
+</section>
+
+<section id="enjeux">
+<div class="wrap">
+<p class="s-lbl reveal">Vos enjeux</p>
+<h2 class="s-h2 reveal d1">Vous reconnaissez-vous<br>dans ces <span class="em">situations ?</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="enjeux-grid">
+<div class="ej-card reveal d1"><div class="ej-num">01</div><div class="ej-title">Opacité de la performance</div><p class="ej-text">Vous gérez l'opérationnel avec passion, mais la lecture de votre rentabilité réelle reste complexe. Sans indicateurs clairs, il est difficile de distinguer l'agitation du profit.</p></div>
+<div class="ej-card reveal d2"><div class="ej-num">02</div><div class="ej-title">Solitude stratégique</div><p class="ej-text">Pricing, distribution, marketing : chaque décision critique repose sur vos seules épaules. L'absence d'un partenaire de niveau pour challenger vos choix freine votre capacité de recul.</p></div>
+<div class="ej-card reveal d3"><div class="ej-num">03</div><div class="ej-title">Désalignement global</div><p class="ej-text">Votre établissement fonctionne, mais votre identité de marque, vos outils et votre distribution ne parlent pas le même langage. Ce manque de cohérence bride votre rayonnement et votre valorisation.</p></div>
+</div>
+</div>
+</section>
+
+<section id="mission">
+<div class="wrap">
+<div class="mission-layout">
+<div class="reveal">
+<div class="photo-frame">
+<img class="photo-img" src="data:image/jpeg;base64,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" alt="Sylvia Zué Eyi">
+</div>
+<div class="identity">
+<strong>Sylvia Zué Eyi</strong>
+<span>Fondatrice &amp; Directrice stratégique</span>
+</div>
+</div>
+<div>
+<p class="s-lbl reveal">Votre direction stratégique dédiée</p>
+<h2 class="s-h2 reveal d1">Une méthode de terrain,<br><span class="em">trois piliers de performance</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="mission-body reveal d2">
+<p>Ancienne directrice d'établissement 4 étoiles, j'ai vécu la réalité de vos défis : l'exigence de rentabilité, la complexité des écosystèmes digitaux et cette solitude du décideur face à l'urgence.</p>
+<p>J'ai fondé SZE Hotel Consulting pour doter les hôteliers indépendants des leviers stratégiques des grandes chaînes : un pilotage de haute précision structuré autour de la stratégie commerciale, de l'acquisition directe et de l'excellence client. Ici, pas de rapports théoriques. Nous déployons des méthodes éprouvées qui transforment vos données en leviers concrets de croissance.</p>
+</div>
+<blockquote class="exergue-block reveal d2">"Je ne remplace pas votre vision, je suis la force motrice qui transforme vos données en décisions et vos décisions en résultats."</blockquote>
+</div>
+</div>
+</div>
+</section>
+
+<section id="solutions">
+<div class="wrap">
+<p class="s-lbl reveal">Trois piliers d'intervention</p>
+<h2 class="s-h2 reveal d1">Une expertise à 360° :<br><span class="em">de la vision stratégique à la réalité opérationnelle.</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="sol-grid">
+<div class="sol-card reveal d1">
+<div class="sol-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+<div class="sol-title">Stratégie commerciale &amp; Distribution</div>
+<p class="sol-text">Optimisation tarifaire et pricing dynamique pour capturer chaque point de marge. Audit et paramétrage de votre écosystème technologique (PMS, Channel Manager) pour reprendre la pleine souveraineté sur votre distribution et vos données.</p>
+</div>
+<div class="sol-card reveal d2">
+<div class="sol-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+<div class="sol-title">Acquisition &amp; Notoriété</div>
+<p class="sol-text">Déploiement de campagnes de conversion (Metasearch, Google Ads) et optimisation SEO. Pilotage de votre notoriété sociale pour transformer votre identité de marque en un levier puissant de réservation directe.</p>
+</div>
+<div class="sol-card reveal d3">
+<div class="sol-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<div class="sol-title">Excellence &amp; Fidélisation</div>
+<p class="sol-text">Alignement de vos standards de service sur les codes de l'hôtellerie de qualité. Mise en place de stratégies CRM et de fidélisation pour capitaliser sur votre base de données et pérenniser votre profit net.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="resultats">
+<div class="wrap">
+<p class="s-lbl reveal">Résultats de terrain</p>
+<h2 class="s-h2 reveal d1">La performance<br><span class="em">en conditions réelles</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="resultats-grid">
+<div class="res-card reveal d1">
+<div class="res-label">Souveraineté numérique</div>
+<div class="res-val">7% → 20% <span>en &lt; 12 mois</span></div>
+<div class="res-sublabel">Part des réservations directes</div>
+<p class="res-detail">Plus qu'une statistique, c'est une indépendance retrouvée face aux intermédiaires. Une marge brute qui reste enfin au sein de votre établissement.</p>
+</div>
+<div class="res-card reveal d2">
+<div class="res-label">Efficacité investie</div>
+<div class="res-val">ROI ×29</div>
+<div class="res-sublabel">Retour sur investissement</div>
+<p class="res-detail">5 000 € investis pour 145 000 € de CA généré via Google Hotel Ads. Avec une stratégie ciblée, chaque euro de votre budget marketing devient un levier de croissance.</p>
+</div>
+<div class="res-card reveal d3">
+<div class="res-label">Pérennité de l'image</div>
+<div class="res-val">76 → 92<span>/100</span></div>
+<div class="res-sublabel">Indice de satisfaction client</div>
+<p class="res-detail">Une note stabilisée sur plus de 1 000 avis annuels. La performance financière n'est durable que si elle s'appuie sur l'excellence de l'expérience client.</p>
+</div>
+</div>
+<p class="res-context reveal">Indicateurs relevés en établissement hôtelier 4 étoiles (Grand Paris), période 2021—2024.</p>
+<div class="reveal" style="margin-top:3rem;text-align:center;padding:3rem 2rem;border:1px solid rgba(198,169,120,.12);">
+<p style="font-size:.95rem;font-weight:300;color:var(--muted);max-width:560px;margin:0 auto 2rem;line-height:1.85;">Ces résultats ne sont pas des exceptions, c'est mon standard. Je vous propose de mettre ce potentiel au service de votre établissement.</p>
+<a href="https://calendly.com/szehotelconsulting-direction-strategique/30min" target="_blank" class="btn-gold">Prenons 30 minutes pour en discuter (offert)</a>
+</div>
+</div>
+</section>
+
+<section id="temoignages">
+<div class="wrap">
+<p class="s-lbl reveal">Témoignages</p>
+<h2 class="s-h2 reveal d1">La parole à<br><span class="em">nos partenaires.</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="temoignages-grid">
+<div class="temo-card reveal d1">
+<p class="temo-quote">"Sylvia est une experte reconnue de la tech hôtelière. Elle sait rapidement s'approprier les outils et les adapter pour construire des stratégies pertinentes et orientées résultats. Sa capacité à transformer des solutions en leviers opérationnels et commerciaux concrets est particulièrement appréciable."</p>
+<div class="temo-author"><strong>Hadrien Reaud</strong><span>Responsable Produit et Opérations, Getwelcom</span></div>
+</div>
+<div class="temo-card reveal d2">
+<p class="temo-quote">"J'ai connu Sylvia dans différentes vies. Ce que j'en retiens c'est son expertise, sa vision et son envie de toujours aller plus loin pour mener plus que bien les missions qui lui sont données. À chaque fois elle m'étonne encore un peu plus."</p>
+<div class="temo-author"><strong>Brice Bonbois</strong><span>Fondateur IZZY, Président CHOM</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="partenaires">
+<div class="wrap">
+<p class="s-lbl reveal">Écosystème partenaire</p>
+<h2 class="s-h2 reveal d1">Un réseau d'expertises<br><span class="em">au service de votre hôtel</span></h2>
+<div class="s-rule reveal d2"></div>
+<div class="partenaires-grid">
+<div class="part-card reveal d1"><div class="part-category">Revenue Management</div><div class="part-items">Mathieu Quiros</div></div>
+<div class="part-card reveal d2"><div class="part-category">Distribution &amp; Metasearch</div><div class="part-items">Mirai, Decibell, SiteMinder</div></div>
+<div class="part-card reveal d3"><div class="part-category">Tech &amp; Expérience client</div><div class="part-items">Getwelcom, Expérience Hôtel, MyBeezBox, Triggerflow</div></div>
+</div>
+</div>
+</section>
+
+<section id="offres">
+<div class="wrap">
+<p class="s-lbl reveal">Offres &amp; tarifs</p>
+<h2 class="s-h2 reveal d1">Comment <span class="em">travaillons-nous</span><br>ensemble ?</h2>
+<div class="s-rule reveal d2"></div>
+<div class="offres-grid">
+<div class="offre-card reveal d1">
+<div class="offre-tag">Socle obligatoire</div>
+<div class="offre-name">Audit Stratégique 360°</div>
+<div class="offre-sub">Le diagnostic complet pour révéler votre potentiel de croissance</div>
+<ul class="offre-list">
+<li>Analyse de la distribution · Audit du mix de vente et de l'e-réputation</li>
+<li>Audit de visibilité · Référencement local (Google) et performance du site web</li>
+<li>Optimisation commerciale · Analyse de la rentabilité et stratégie de pricing</li>
+<li>Immersion terrain · Visite mystère et audit des standards de service</li>
+<li>Livrable · Feuille de route stratégique 12 mois et plan d'actions prioritaires activables sous 90 jours</li>
+</ul>
+<div class="offre-price">À partir de 2 000 €</div>
+<p class="offre-note">Ajusté selon la structure de l'établissement</p>
+</div>
+<div class="offre-card reveal d2">
+<div class="offre-tag">Accompagnement continu</div>
+<div class="offre-name">Direction Stratégique Externalisée</div>
+<div class="offre-sub">Le co-pilotage expert pour transformer votre rentabilité dans la durée</div>
+<ul class="offre-list">
+<li>Pilotage commercial · Pricing dynamique, revenue management et réduction des commissions OTAs</li>
+<li>Souveraineté digitale · SEO local, Google Business Profile et conversion du site web</li>
+<li>Acquisition directe · Campagnes de conversion (Google Hotel Ads, TripAdvisor, Trivago)</li>
+<li>Fidélisation &amp; notoriété · Stratégies CRM et présence sur les réseaux sociaux</li>
+<li>Conseil de direction · Accompagnement du dirigeant dans ses arbitrages et pilotage de l'écosystème de partenaires</li>
+</ul>
+<div class="offre-price">À partir de 5 000 € <span style="font-size:1rem;color:var(--muted);font-weight:300">/ mois</span></div>
+<p class="offre-note">Engagement minimum 6 mois — Hors budgets publicitaires et outils tiers</p>
+</div>
+</div>
+<div class="process-strip reveal">
+<div class="ps-step"><div class="ps-num">1</div><div class="ps-title">Échange de découverte</div><p class="ps-text">Un premier appel offert de 30 minutes pour comprendre vos enjeux et vos priorités. Sans engagement.</p></div>
+<div class="ps-step"><div class="ps-num">2</div><div class="ps-title">Audit Stratégique 360°</div><p class="ps-text">Diagnostic complet, visite mystère, livrable structuré avec plan d'action 12 mois et recommandations activables.</p></div>
+<div class="ps-step"><div class="ps-num">3</div><div class="ps-title">Mise en œuvre</div><p class="ps-text">Vous déployez en autonomie ou confiez le pilotage à SZE Hotel Consulting selon vos axes prioritaires.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact-wrap">
+<p class="s-lbl reveal" style="text-align:center">Parlons de votre établissement</p>
+<h2 class="contact-h2 reveal d1">Prêt à reprendre<br><span class="em">le cap ?</span></h2>
+<p class="contact-sub reveal d2">Un premier échange de 30 minutes, offert, pour comprendre votre situation et voir si une collaboration fait sens. Sans engagement, sans pitch.</p>
+<a href="https://calendly.com/szehotelconsulting-direction-strategique/30min" target="_blank" class="btn-gold reveal d2">Réserver votre échange stratégique</a>
+<div class="contact-links reveal d3">
+<a href="tel:+33631666255" class="c-link"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>06 31 66 62 55</a>
+<a href="/cdn-cgi/l/email-protection#61020e0f1500021521121b04090e15040d020e0f12140d15080f064f0713" class="c-link"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="8ae9e5e4feebe9fecaf9f0efe2e5feefe6e9e5e4f9ffe6fee3e4eda4ecf8">[email&#160;protected]</span></a>
+<a href="https://www.linkedin.com/in/sylvia-zue-eyi" target="_blank" rel="noopener" class="c-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+</div>
+<div class="contact-zone reveal">
+<span class="cz-lbl">Zones d'intervention</span>
+<p>France &nbsp;/&nbsp; Europe &nbsp;/&nbsp; Afrique francophone</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="ft-top">
+<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgODQxLjg5IDU5NS4yOCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDMwLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDEzNikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBmb250LWZhbWlseTogUGV0YWxhUHJvTGlnaHQsICdQZXRhbGEgUHJvJzsKICAgICAgICBmb250LXNpemU6IDUxLjFweDsKICAgICAgfQoKICAgICAgLnN0MCwgLnN0MSB7CiAgICAgICAgZmlsbDogI2M2YTk3ODsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHRleHQgY2xhc3M9InN0MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM3Ljk3IDQyMi41NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5TWkUgSE9URUwgQ09OU1VMVElORzwvdHNwYW4+PC90ZXh0PgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIzNjguMzcgMzQ0LjEzIDM2Ny45NiAzNDQuNzMgMzY4LjE3IDM0NC43MyAzNjguMzcgMzQ0LjEzIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDgzLjc4LDI2OC45OWM5Ljc3LDUuNSwxOC4yNiwxNy4wOSwxOC4yNiwxNy4wOWwxLjM2LTI3LjMzaC00OS44MmwtLjk4LDEuMTljMTEuNTcsMCwyMS40MSwzLjU2LDMxLjE5LDkuMDZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDI0LjM0LDI1My41NWwtMTYuODctMy40MmMtMTcuNTktMi44OC0zMC43OC03LjYyLTM5LjU3LTE0LjIyLTguOC02LjYxLTEzLjMzLTE2LjMzLTEzLjYxLTI5LjE2LDAtOS43NywyLjg5LTE4LjA1LDguNjYtMjQuODUsNS43Ny02Ljc5LDEzLjI1LTExLjY4LDIyLjQ2LTE0LjY1LDkuMjEtMi45NiwxOS4zLTQuNjksMzAuMy01LjE3LDExLS40NywyMS45OS4zNCwzMi45OSwyLjQ0LDExLDIuMTEsMjAuODksNS4yNywyOS42OCw5LjQ4LDguMjUsMy42NCwxNC45LDguNDgsMjAsMTQuNTEsNS4wOCw2LjAzLDcuOSwxMi40OSw4LjQ1LDE5LjM5di0zMy4wNGMtMjUuODMtMTEuMy01NC42OS0xNi40Ny04Ni41Ny0xNS41MS0yMC4wNi43Ny0zNy4zOCw0LjQxLTUxLjk0LDEwLjkxLTE0LjU2LDYuNTItMjQuNzMsMTUuNzEtMzAuNTEsMjcuNTktNy4xNSwxNC45NC01LjIyLDI4Ljc3LDUuNzcsNDEuNTEsMTEsMTIuNzQsMjcuMjEsMjEuMjIsNDguNjUsMjUuNDJsMTkuNDIsMy43OCw1LjctNi43NCw2Ljk5LTguMjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzY3Ljk2LDM0NC43M2wuNDItLjU5LDEzLjA3LTE1LjQxYy00Ljk3LTIuNTMtOC45Ny01LjYyLTEzLjQzLTguNmwtMTYuMDcsMTljMi45MiwyLjExLDYuMTgsMy45NSw5LjcsNS42aDYuMzFaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDczLjc1LDM0Mi4yN2MuMzYtLjMxLjY2LS42OSwxLjAxLTEuMDIiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00MjEuMzYsMjgxLjY2bDEzLjc4LTE2LjI0LDUxLjkzLTYxLjIyaC04Ni4xNmwtMTEuNzcsMjYuODZjNC4xMi03LjY3LDExLjMtMTMuODYsMjEuNTMtMTguNTgsMTAuMjMtNC43MSwyMS41NC03LjA3LDMzLjk0LTcuMDdoMjAuNDVsLTQwLjczLDQ4LjE0LDIuMi40NS0xMi42NiwxNC45OS0yLjIzLS40My04LjE2LDkuNjQtMzUuNDgsNDEuOTRjNC40NiwyLjk4LDguNDUsNi4wNiwxMy40Myw4LjZsMzkuOTItNDcuMDZaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjQyNi41NCAyNTQgNDI0LjM0IDI1My41NSA0MTcuMzUgMjYxLjgyIDQxMS42NSAyNjguNTUgNDEzLjg4IDI2OC45OSA0MjYuNTQgMjU0Ii8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzUxLjk0LDMzOS4xM2MtMy4zOC0yLjQ0LTYuMzYtNS4xOC04LjkzLTguMjMtNS4wOC02LjAzLTcuOS0xMi40OS04LjQ1LTE5LjM5djMzLjA0Yy4xNS4wNi4zLjEyLjQ1LjE4aDEyLjJsNC43NC01LjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzYxLjY1LDM0NC43M2MtMy41Mi0xLjY1LTYuNzktMy40OS05LjctNS42bC00Ljc0LDUuNmgxNC40NFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00ODYuNTcsMzE5LjM0Yy0xLjA0LDYuOTItMy43NCwxMi45OC04LjE1LDE4LjE3LTEuMTQsMS4zNC0yLjQsMi41NS0zLjY3LDMuNzQtLjM1LjMzLS42NS43LTEuMDEsMS4wMi0uNzUuNjYtMS41OSwxLjItMi4zOCwxLjgxLS4yOC4yMi0uNTcuNDQtLjg2LjY1aDEwLjk5YzEwLjExLTYuMDUsMTcuNDktMTMuNzUsMjIuMDctMjMuMTcuNTUtMS4xNS45NC0yLjI3LDEuMzgtMy40LTUuOC40NS0xMi4wNS44My0xOC4zOSwxLjE4WiIvPgogIDwvZz4KPC9zdmc+" alt="SZE Hotel Consulting" class="ft-logo">
+<p class="ft-baseline">Stratégie commerciale, marketing et expérience client pour l'hôtellerie indépendante.</p>
+</div>
+
+<div class="ft-bottom">
+<p style="font-size:.6rem;font-weight:300;color:rgba(251,249,245,.18);text-align:center;line-height:1.7;">Entreprise individuelle — Sylvia Grace Zué Eyi &nbsp;|&nbsp; SIRET&nbsp;: 940 503 147 00016 &nbsp;|&nbsp; RCS Paris &nbsp;|&nbsp; © 2026 SZE Hotel Consulting</p>
+<p style="margin-top:.8rem;font-size:.6rem;font-weight:300;text-align:center;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+<a id="link-mentions" style="color:rgba(198,169,120,.5);cursor:pointer;" onclick="document.getElementById('modal-mentions').style.display='flex';document.body.style.overflow='hidden'">Mentions légales</a>
+<a id="link-confidentialite" style="color:rgba(198,169,120,.5);cursor:pointer;" onclick="document.getElementById('modal-confidentialite').style.display='flex';document.body.style.overflow='hidden'">Politique de confidentialité</a>
+<a id="link-cookies" style="color:rgba(198,169,120,.5);cursor:pointer;" onclick="localStorage.removeItem('sze-consent');document.getElementById('cookie-banner').style.display='flex';">Gérer mes cookies</a>
+</p>
+</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+
+// Scroll reveal
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Hamburger menu
+const hbg=document.getElementById('hamburger');
+const mob=document.getElementById('mobileOverlay');
+if(hbg){hbg.addEventListener('click',()=>{
+  hbg.classList.toggle('active');
+  mob.classList.toggle('open');
+  document.body.style.overflow=mob.classList.contains('open')?'hidden':'';
+})}
+function closeMenu(){if(hbg)hbg.classList.remove('active');if(mob)mob.classList.remove('open');document.body.style.overflow=''}
+
+// GA loader
+function loadGA(){
+  var s=document.createElement('script');
+  s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id=G-EF8N2P7QH4';
+  document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments)}
+  window.gtag=gtag;
+  gtag('js',new Date());
+  gtag('config','G-EF8N2P7QH4',{'anonymize_ip':true});
+}
+
+// Cookies
+function acceptCookies(){
+  localStorage.setItem('sze-consent','accepted');
+  document.getElementById('cookie-banner').style.display='none';
+  loadGA();
+}
+function refuseCookies(){
+  localStorage.setItem('sze-consent','refused');
+  document.getElementById('cookie-banner').style.display='none';
+}
+
+// Modals
+function openModal(id){
+  var m=document.getElementById(id);
+  if(m){m.style.display='flex';document.body.style.overflow='hidden';}
+}
+function closeModal(id){
+  var m=document.getElementById(id);
+  if(m){m.style.display='none';document.body.style.overflow='';}
+}
+
+// Init on load
+window.addEventListener('load',function(){
+  // Cookie banner
+  var consent=localStorage.getItem('sze-consent');
+  var banner=document.getElementById('cookie-banner');
+  if(consent==='accepted'){if(banner)banner.style.display='none';loadGA();}
+  else if(consent==='refused'){if(banner)banner.style.display='none';}
+
+  // Footer links
+  var lm=document.getElementById('link-mentions');
+  var lc=document.getElementById('link-confidentialite');
+  var lk=document.getElementById('link-cookies');
+  var lb=document.getElementById('link-banner-privacy');
+  var cm=document.getElementById('close-mentions');
+  var cc=document.getElementById('close-confidentialite');
+  var baccept=document.getElementById('btn-accept');
+  var brefuse=document.getElementById('btn-refuse');
+
+  if(lm)lm.addEventListener('click',function(){openModal('modal-mentions');});
+  if(lc)lc.addEventListener('click',function(){openModal('modal-confidentialite');});
+  if(lk)lk.addEventListener('click',function(){
+    localStorage.removeItem('sze-consent');
+    if(banner)banner.style.display='flex';
+  });
+  if(lb)lb.addEventListener('click',function(){openModal('modal-confidentialite');});
+  if(cm)cm.addEventListener('click',function(){closeModal('modal-mentions');});
+  if(cc)cc.addEventListener('click',function(){closeModal('modal-confidentialite');});
+
+  // Close modal on overlay click
+  document.querySelectorAll('.modal-overlay').forEach(function(el){
+    el.addEventListener('click',function(e){if(e.target===this)closeModal(this.id);});
+  });
+});
+</script>
+
+<!-- MODALE MENTIONS LÉGALES -->
+<div class="modal-overlay" id="modal-mentions">
+  <div class="modal-box">
+    <button class="modal-close" id="close-mentions" onclick="document.getElementById('modal-mentions').style.display='none';document.body.style.overflow='';">&times;</button>
+    <div class="modal-title">Mentions légales</div>
+    <div class="modal-rule"></div>
+    <div class="modal-body">
+      <h3>Éditeur du site</h3>
+      <p>SZE Hotel Consulting — Entreprise individuelle<br>Sylvia Grace Zué Eyi<br>231 rue Saint-Honoré, 75001 Paris<br>SIRET : 940 503 147 00016 — RCS Paris<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c7f7372687d7f685c6f667974736879707f73726f69706875727b327a6e">[email&#160;protected]</a></p>
+      <h3>Hébergement</h3>
+      <p>Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco, CA 94107, USA — netlify.com</p>
+      <h3>Propriété intellectuelle</h3>
+      <p>L'ensemble des contenus présents sur ce site (textes, visuels, logo, structure) sont la propriété exclusive de SZE Hotel Consulting. Toute reproduction, même partielle, est interdite sans autorisation préalable écrite.</p>
+      <h3>Responsabilité</h3>
+      <p>SZE Hotel Consulting s'efforce d'assurer l'exactitude des informations diffusées sur ce site. Toutefois, elle ne peut garantir l'exactitude, la complétude ou l'actualité des informations publiées et décline toute responsabilité pour les dommages résultant de l'utilisation de ce site.</p>
+      <h3>Droit applicable</h3>
+      <p>Le présent site est soumis au droit français. Tout litige relatif à son utilisation sera soumis à la compétence exclusive des tribunaux de Paris.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODALE POLITIQUE DE CONFIDENTIALITÉ -->
+<div class="modal-overlay" id="modal-confidentialite">
+  <div class="modal-box">
+    <button class="modal-close" id="close-confidentialite" onclick="document.getElementById('modal-confidentialite').style.display='none';document.body.style.overflow='';">&times;</button>
+    <div class="modal-title">Politique de confidentialité</div>
+    <div class="modal-rule"></div>
+    <div class="modal-body">
+      <h3>Responsable du traitement</h3>
+      <p>Sylvia Grace Zué Eyi — SZE Hotel Consulting<br>231 rue Saint-Honoré, 75001 Paris<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="375458594356544377444d525f5843525b54585944425b435e5950195145">[email&#160;protected]</a></p>
+      <h3>Données collectées</h3>
+      <p>Ce site collecte des données de navigation anonymisées via Google Analytics 4 uniquement après votre consentement explicite. Aucune donnée permettant de vous identifier personnellement n'est collectée sans votre accord.</p>
+      <h3>Finalité</h3>
+      <p>Les données collectées sont utilisées exclusivement pour mesurer l'audience du site. Elles ne sont ni vendues, ni cédées à des tiers.</p>
+      <h3>Cookies</h3>
+      <p>Ce site utilise des cookies de mesure d'audience (Google Analytics). Ces cookies sont déposés uniquement après votre consentement. Vous pouvez retirer votre consentement à tout moment via "Gérer mes cookies" en bas de page.</p>
+      <h3>Durée de conservation</h3>
+      <p>Les données de navigation sont conservées pendant 14 mois conformément aux recommandations de la CNIL.</p>
+      <h3>Vos droits</h3>
+      <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Contact : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="23404c4d57424057635059464b4c57464f404c4d50564f574a4d440d4551">[email&#160;protected]</a></p>
+      <h3>Pour en savoir plus</h3>
+      <p>Consultez le site de la <a href="https://www.cnil.fr" target="_blank" style="color:var(--gold)">CNIL</a>.</p>
+    </div>
+  </div>
+</div>
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#122237;border-top:1px solid rgba(198,169,120,.2);padding:1.4rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+<p style="font-size:.78rem;font-weight:300;color:rgba(251,249,245,.7);line-height:1.7;flex:1;min-width:200px;">Nous utilisons des cookies d'analyse (Google Analytics) pour mesurer l'audience de notre site. <a onclick="document.getElementById('modal-confidentialite').style.display='flex';document.body.style.overflow='hidden'" style="color:#c6a978;text-decoration:underline;cursor:pointer;">En savoir plus</a></p>
+<div style="display:flex;gap:.8rem;flex-shrink:0;">
+<button onclick="localStorage.setItem('sze-consent','refused');document.getElementById('cookie-banner').style.display='none';" style="background:transparent;color:rgba(251,249,245,.7);padding:.55rem 1.2rem;font-size:.65rem;font-weight:300;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(251,249,245,.2);cursor:pointer;white-space:nowrap;">Refuser</button>
+<button onclick="localStorage.setItem('sze-consent','accepted');document.getElementById('cookie-banner').style.display='none';loadGA();" style="background:#c6a978;color:#0f1d2e;padding:.55rem 1.2rem;font-size:.65rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;border:none;cursor:pointer;white-space:nowrap;">Accepter</button>
+</div>
+</div>
+</body>
+</html>
