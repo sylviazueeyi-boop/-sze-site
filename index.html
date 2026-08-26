@@ -18,6 +18,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF8N2P7QH4"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{'analytics_storage':'denied'});
 gtag('js',new Date());gtag('config','G-EF8N2P7QH4');
 </script>
 <style>
@@ -62,7 +63,7 @@ h2{
   font-size:clamp(30px,4.2vw,50px);line-height:1.16;margin-bottom:26px;
 }
 h3{font-family:'Lato',sans-serif;font-size:20px;letter-spacing:.02em;line-height:1.4}
-.lede{font-size:19px;max-width:640px;line-height:1.75;opacity:.86}
+.lede{font-size:19px;line-height:1.75;opacity:.86;text-align:justify}
 .dark .lede{opacity:.78}
 
 /* ---------- NAV ---------- */
@@ -77,15 +78,15 @@ header.stuck{padding:12px 0;background:rgba(15,29,46,.96);backdrop-filter:blur(1
 header.stuck .brandmark img{width:28px}
 .brandmark .bt{color:var(--ivory);font-size:12px;letter-spacing:.24em;text-transform:uppercase;line-height:1.3}
 .brandmark .bt em{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;letter-spacing:.06em;text-transform:none;color:var(--gold);opacity:.9}
-.links{display:flex;align-items:center;gap:34px}
-.links a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(251,249,245,.72);transition:color .3s;position:relative;padding-bottom:3px}
+.links{display:flex;align-items:center;gap:30px}
+.links a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(251,249,245,.72);transition:color .3s;position:relative;padding-bottom:3px;white-space:nowrap}
 .links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .35s ease}
 .links a:hover{color:var(--ivory)}
 .links a:hover::after{width:100%}
 .navcta{
   border:1px solid var(--gold);color:var(--ivory)!important;
   padding:11px 22px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
-  transition:background .35s ease,color .35s ease;
+  transition:background .35s ease,color .35s ease;white-space:nowrap;
 }
 .navcta::after{display:none!important}
 .navcta:hover{background:var(--gold);color:var(--navy)!important}
@@ -109,7 +110,7 @@ header.stuck .brandmark img{width:28px}
   font-size:clamp(38px,6vw,74px);line-height:1.08;margin-bottom:32px;
 }
 .hero h1 .plain{font-family:'Lato',sans-serif;font-style:normal;font-weight:300;display:block;font-size:.44em;letter-spacing:.02em;line-height:1.5;margin-top:22px;opacity:.82}
-.hero-sub{font-size:18px;max-width:560px;opacity:.78;line-height:1.78;margin-bottom:44px}
+.hero-sub{font-size:18px;opacity:.78;line-height:1.78;margin-bottom:44px;text-align:justify;max-width:620px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
 .hero-side{border-left:1px solid var(--rule-dark);padding-left:34px;padding-bottom:8px}
 .hero-side .k{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:46px;line-height:1;color:var(--gold)}
@@ -144,7 +145,7 @@ header.stuck .brandmark img{width:28px}
 .cbox:last-child{border-right:0;padding-right:0}
 .cbox .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--gold);display:block;margin-bottom:18px;letter-spacing:.08em}
 .cbox h3{margin-bottom:14px}
-.cbox p{font-size:16px;opacity:.8;line-height:1.72}
+.cbox p{font-size:16px;opacity:.8;line-height:1.72;text-align:justify}
 .pivot{
   margin-top:64px;padding-top:40px;border-top:1px solid var(--rule-light);
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -163,7 +164,7 @@ header.stuck .brandmark img{width:28px}
 }
 .portrait .cap{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.62;line-height:1.7}
 .portrait .cap em{font-family:'Cormorant Garamond',serif;font-style:italic;text-transform:none;letter-spacing:.02em;font-size:15px;color:var(--gold);display:block;margin-top:6px}
-.mission-body p{margin-bottom:22px;font-size:17.5px;line-height:1.8;opacity:.88}
+.mission-body p{margin-bottom:22px;font-size:17.5px;line-height:1.8;opacity:.88;text-align:justify}
 .quote{
   margin-top:44px;padding:34px 0 0;border-top:1px solid var(--rule-light);
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -191,8 +192,8 @@ header.stuck .brandmark img{width:28px}
 }
 .card.hero-card .badge{background:rgba(198,169,120,.1);border-color:var(--gold);color:var(--gold)}
 .card h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:27px;line-height:1.2;margin-bottom:18px}
-.card .hook{font-size:16px;line-height:1.7;opacity:.86;margin-bottom:22px}
-.card .body{font-size:15px;line-height:1.72;opacity:.68;margin-bottom:26px}
+.card .hook{font-size:16px;line-height:1.7;opacity:.86;margin-bottom:22px;text-align:justify}
+.card .body{font-size:15px;line-height:1.72;opacity:.68;margin-bottom:26px;text-align:justify}
 .card .out{
   font-size:14.5px;line-height:1.65;padding-top:24px;border-top:1px solid var(--rule-dark);
   margin-top:auto;margin-bottom:28px;
@@ -219,7 +220,7 @@ header.stuck .brandmark img{width:28px}
 .step:last-child{border-right:0;padding-right:0}
 .step .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;color:var(--gold);line-height:1;display:block;margin-bottom:20px}
 .step h3{font-size:17px;margin-bottom:12px}
-.step p{font-size:15px;opacity:.72;line-height:1.7}
+.step p{font-size:15px;opacity:.72;line-height:1.7;text-align:justify}
 
 /* ---------- FAQ ---------- */
 .faq{max-width:880px;margin:0 auto;border-top:1px solid var(--rule-light)}
@@ -239,7 +240,7 @@ header.stuck .brandmark img{width:28px}
 }
 .q.open button::before{transform:scaleY(0);opacity:0}
 .q .a{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1)}
-.q .a p{padding:0 60px 30px 0;font-size:16.5px;line-height:1.78;opacity:.8}
+.q .a p{padding:0 0 30px 0;font-size:16.5px;line-height:1.78;opacity:.8;text-align:justify}
 
 /* ---------- CONTACT ---------- */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:start}
@@ -263,6 +264,53 @@ form .btn{justify-self:start;margin-top:10px}
 footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px solid var(--rule-dark)}
 .fgrid{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;font-size:12.5px;letter-spacing:.06em;opacity:.55}
 .fgrid img{width:30px;opacity:.8}
+.flegal{margin-top:28px;padding-top:24px;border-top:1px solid var(--rule-dark);display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+.legal-link{background:none;border:0;color:rgba(251,249,245,.5);font-family:'Lato',sans-serif;font-weight:300;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:color .3s ease;padding:4px 0}
+.legal-link:hover{color:var(--gold)}
+.legal-link.inline{display:inline;text-transform:none;letter-spacing:0;font-size:inherit;text-decoration:underline;text-underline-offset:3px;color:var(--gold);padding:0}
+.fsep{opacity:.3;font-size:12px}
+
+/* ---------- MODALS ---------- */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(15,29,46,.86);backdrop-filter:blur(4px);
+  z-index:100;display:none;align-items:center;justify-content:center;padding:26px;
+}
+.modal-overlay.open{display:flex}
+.modal-panel{
+  background:var(--ivory);color:var(--ink);max-width:720px;width:100%;max-height:82vh;
+  overflow-y:auto;padding:56px 52px;position:relative;border-top:2px solid var(--gold);
+}
+.modal-close{
+  position:absolute;top:20px;right:24px;background:none;border:0;font-size:28px;
+  line-height:1;color:var(--ink);opacity:.5;cursor:pointer;transition:opacity .3s;
+}
+.modal-close:hover{opacity:1}
+.modal-content h2{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:32px;margin-bottom:28px;
+}
+.modal-content p{font-size:15.5px;line-height:1.8;margin-bottom:20px;text-align:justify}
+.modal-content strong{font-weight:400;color:var(--navy)}
+.modal-content a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.modal-content .eyebrow{text-align:left}
+
+/* ---------- COOKIE BANNER ---------- */
+.cookie-banner{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;
+  background:var(--navy);color:var(--ivory);border-top:1px solid rgba(198,169,120,.35);
+  padding:22px 0;transform:translateY(110%);transition:transform .6s cubic-bezier(.22,.61,.36,1);
+}
+.cookie-banner.show{transform:none}
+.cookie-inner{
+  max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;
+  justify-content:space-between;gap:28px;flex-wrap:wrap;
+}
+.cookie-inner p{font-size:13.5px;line-height:1.65;opacity:.82;max-width:640px;text-align:justify}
+.cookie-actions{display:flex;gap:12px;flex-shrink:0}
+.cookie-actions .btn{padding:12px 24px;font-size:11px}
+@media(max-width:640px){
+  .modal-panel{padding:40px 26px}
+  .cookie-inner{flex-direction:column;align-items:flex-start}
+}
 
 /* ---------- REVEAL ---------- */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .95s cubic-bezier(.22,.61,.36,1),transform .95s cubic-bezier(.22,.61,.36,1)}
@@ -286,9 +334,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   .stat:not(:first-child){padding-left:0}
   .portrait::after{display:none}
 }
-@media(max-width:760px){
-  section{padding:80px 0}
-  .wrap{padding:0 22px}
+@media(max-width:1080px){
   .links{
     position:fixed;inset:0;background:var(--navy);flex-direction:column;
     justify-content:center;gap:26px;transform:translateX(100%);transition:transform .5s cubic-bezier(.22,.61,.36,1);
@@ -296,6 +342,10 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   .links.open{transform:none}
   .links a{font-size:15px}
   .burger{display:block;z-index:70;position:relative}
+}
+@media(max-width:760px){
+  section{padding:80px 0}
+  .wrap{padding:0 22px}
   .stats{grid-template-columns:1fr}
   .row2{grid-template-columns:1fr}
   .scrollcue{display:none}
@@ -322,7 +372,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
       <a href="#offres">Nos solutions</a>
       <a href="#resultats">Résultats</a>
       <a href="#formation">Formation</a>
-      <a href="#faq">Questions</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact" class="navcta">Réserver 30 minutes</a>
     </nav>
     <button class="burger" id="bg" aria-label="Ouvrir le menu"><span></span><span></span></button>
@@ -574,7 +624,65 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
     <span>SZE Hotel Consulting · Direction stratégique externalisée</span>
     <span>231 rue Saint-Honoré, 75001 Paris · SIRET 940 503 147 00016</span>
   </div>
+  <div class="wrap flegal">
+    <button class="legal-link" data-modal="mentions">Mentions légales</button>
+    <span class="fsep">·</span>
+    <button class="legal-link" data-modal="confidentialite">Politique de confidentialité</button>
+    <span class="fsep">·</span>
+    <button class="legal-link" id="reopenCookies">Gérer les cookies</button>
+  </div>
 </footer>
+
+<!-- MODALES LEGALES -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+
+    <div class="modal-content" id="modal-mentions">
+      <p class="eyebrow"><span></span>Informations légales</p>
+      <h2>Mentions légales</h2>
+      <p><strong>Éditrice du site</strong><br>
+      Le site szehotelconsulting.fr est édité par Sylvia Zué Eyi, entrepreneure individuelle (micro-entreprise), exerçant sous le nom commercial SZE Hotel Consulting.<br>
+      Adresse professionnelle : 231 rue Saint-Honoré, 75001 Paris, France.<br>
+      SIRET : 940 503 147 00016.<br>
+      Directrice de la publication : Sylvia Zué Eyi.<br>
+      Contact : <a href="mailto:contact@szehotelconsulting.fr">contact@szehotelconsulting.fr</a></p>
+      <p><strong>Hébergement</strong><br>
+      Le site est hébergé par GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis, via le service GitHub Pages.</p>
+      <p><strong>Propriété intellectuelle</strong><br>
+      L'ensemble des contenus présents sur ce site (textes, logo, identité visuelle, photographies) est la propriété de SZE Hotel Consulting, sauf mention contraire. Toute reproduction, même partielle, est soumise à autorisation préalable.</p>
+      <p><strong>Responsabilité</strong><br>
+      SZE Hotel Consulting s'efforce d'assurer l'exactitude des informations diffusées sur ce site, sans garantie d'exhaustivité. L'utilisation des informations se fait sous la seule responsabilité de l'utilisateur.</p>
+    </div>
+
+    <div class="modal-content" id="modal-confidentialite" style="display:none">
+      <p class="eyebrow"><span></span>Vos données</p>
+      <h2>Politique de confidentialité</h2>
+      <p><strong>Responsable de traitement</strong><br>
+      Sylvia Zué Eyi (nom commercial SZE Hotel Consulting), 231 rue Saint-Honoré, 75001 Paris.</p>
+      <p><strong>Données collectées</strong><br>
+      Via le formulaire de contact : nom, nom d'établissement, adresse email et message transmis. Ces données sont traitées par Formspree, dans le seul but de répondre à votre demande, et ne sont ni revendues ni utilisées à des fins commerciales tierces.<br>
+      Via la navigation sur le site : des données de mesure d'audience sont collectées par Google Analytics, uniquement après votre consentement via le bandeau cookies.</p>
+      <p><strong>Cookies</strong><br>
+      Ce site utilise des cookies de mesure d'audience (Google Analytics), déposés uniquement si vous les acceptez. Vous pouvez modifier votre choix à tout moment via le lien « Gérer les cookies » en pied de page.</p>
+      <p><strong>Vos droits</strong><br>
+      Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur vos données personnelles. Pour l'exercer, contactez <a href="mailto:contact@szehotelconsulting.fr">contact@szehotelconsulting.fr</a>.</p>
+      <p><strong>Durée de conservation</strong><br>
+      Les données transmises via le formulaire de contact sont conservées le temps nécessaire au traitement de votre demande, puis supprimées.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BANDEAU COOKIES -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-inner">
+    <p>Ce site utilise des cookies de mesure d'audience pour comprendre sa fréquentation. Vous pouvez accepter ou refuser leur dépôt. <button class="legal-link inline" data-modal="confidentialite">En savoir plus</button></p>
+    <div class="cookie-actions">
+      <button class="btn btn-g" id="cookieRefuse">Refuser</button>
+      <button class="btn btn-p" id="cookieAccept">Accepter</button>
+    </div>
+  </div>
+</div>
 
 <script>
 // nav sticky
@@ -599,6 +707,45 @@ document.querySelectorAll('.q button').forEach(function(b){
     document.querySelectorAll('.q.open').forEach(function(o){o.classList.remove('open');o.querySelector('.a').style.maxHeight=null});
     if(!open){q.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
   });
+});
+
+// modales legales
+var overlay=document.getElementById('modalOverlay');
+function openModal(id){
+  document.querySelectorAll('.modal-content').forEach(function(c){c.style.display='none'});
+  var target=document.getElementById('modal-'+id);
+  if(target){target.style.display='block'}
+  overlay.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  overlay.classList.remove('open');
+  document.body.style.overflow='';
+}
+document.querySelectorAll('[data-modal]').forEach(function(btn){
+  btn.addEventListener('click',function(){openModal(btn.getAttribute('data-modal'))});
+});
+document.getElementById('modalClose').addEventListener('click',closeModal);
+overlay.addEventListener('click',function(e){if(e.target===overlay){closeModal()}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal()}});
+
+// bandeau cookies
+var cookieBanner=document.getElementById('cookieBanner');
+var CONSENT_KEY='sze_cookie_consent';
+function applyConsent(v){
+  if(v==='accepted'){gtag('consent','update',{'analytics_storage':'granted'})}
+  else{gtag('consent','update',{'analytics_storage':'denied'})}
+}
+var saved=localStorage.getItem(CONSENT_KEY);
+if(saved){applyConsent(saved)}else{cookieBanner.classList.add('show')}
+document.getElementById('cookieAccept').addEventListener('click',function(){
+  localStorage.setItem(CONSENT_KEY,'accepted');applyConsent('accepted');cookieBanner.classList.remove('show');
+});
+document.getElementById('cookieRefuse').addEventListener('click',function(){
+  localStorage.setItem(CONSENT_KEY,'refused');applyConsent('refused');cookieBanner.classList.remove('show');
+});
+document.getElementById('reopenCookies').addEventListener('click',function(){
+  cookieBanner.classList.add('show');
 });
 </script>
 </body>
