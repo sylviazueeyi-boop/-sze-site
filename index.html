@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SZE Hotel Consulting — Direction stratégique externalisée pour hôtels indépendants 4 et 5 étoiles</title>
-<meta name="description" content="Ancienne directrice d'établissement 4 étoiles, j'accompagne les hôteliers indépendants 4 et 5 étoiles sur l'acquisition directe, le pilotage marketing et la stratégie commerciale. Paris, France, international.">
-<meta property="og:title" content="SZE Hotel Consulting — Direction stratégique externalisée">
-<meta property="og:description" content="Plus de direct. Moins de commissions. Plus de marge. Direction stratégique externalisée pour hôtels indépendants 4 et 5 étoiles.">
+<title>SZE Hotel Consulting — Direction stratégique et marketing externalisée pour hôtels indépendants 4-5 étoiles et groupes multi-établissements</title>
+<meta name="description" content="Ancienne directrice d'établissement 4 étoiles, j'accompagne les hôtels indépendants 4 et 5 étoiles et les groupes multi-établissements sur l'acquisition directe, le pilotage marketing et la stratégie commerciale. Paris, France, international.">
+<meta property="og:title" content="SZE Hotel Consulting — Direction stratégique et marketing externalisée">
+<meta property="og:description" content="Plus de direct. Moins de commissions. Plus de marge. Direction stratégique et marketing externalisée pour hôtels indépendants 4-5 étoiles et groupes multi-établissements.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://szehotelconsulting.fr">
 <meta property="og:locale" content="fr_FR">
@@ -30,7 +30,7 @@ gtag('js',new Date());gtag('config','G-EF8N2P7QH4');
   --ink:#202020;
   --rule-dark:rgba(251,249,245,.16);
   --rule-light:rgba(15,29,46,.14);
-  --max:1180px;
+  --max:1360px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -63,7 +63,7 @@ h2{
   font-size:clamp(30px,4.2vw,50px);line-height:1.16;margin-bottom:26px;
 }
 h3{font-family:'Lato',sans-serif;font-size:20px;letter-spacing:.02em;line-height:1.4}
-.lede{font-size:19px;line-height:1.75;opacity:.86;text-align:justify}
+.lede{font-size:19px;line-height:1.75;opacity:.86;text-align:left;max-width:700px}
 .dark .lede{opacity:.78}
 
 /* ---------- NAV ---------- */
@@ -72,13 +72,14 @@ header{
   padding:22px 0;transition:padding .45s ease,background .45s ease,box-shadow .45s ease;
 }
 header.stuck{padding:12px 0;background:rgba(15,29,46,.96);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--rule-dark)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:32px}
-.brandmark{display:flex;align-items:center;gap:13px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brandmark{display:flex;align-items:center;gap:13px;flex:0 0 auto;white-space:nowrap}
 .brandmark img{width:34px;height:auto;transition:width .45s ease}
 header.stuck .brandmark img{width:28px}
 .brandmark .bt{color:var(--ivory);font-size:12px;letter-spacing:.24em;text-transform:uppercase;line-height:1.3}
 .brandmark .bt em{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;letter-spacing:.06em;text-transform:none;color:var(--gold);opacity:.9}
-.links{display:flex;align-items:center;gap:30px}
+.links{display:flex;align-items:center;gap:22px;flex-wrap:nowrap}
+.nav-sec{display:none}
 .links a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(251,249,245,.72);transition:color .3s;position:relative;padding-bottom:3px;white-space:nowrap}
 .links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .35s ease}
 .links a:hover{color:var(--ivory)}
@@ -104,15 +105,15 @@ header.stuck .brandmark img{width:28px}
   background:radial-gradient(120% 90% at 78% 12%,rgba(198,169,120,.13),transparent 58%);
   pointer-events:none;
 }
-.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:end;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:start;position:relative}
 .hero h1{
   font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;
   font-size:clamp(38px,6vw,74px);line-height:1.08;margin-bottom:32px;
 }
 .hero h1 .plain{font-family:'Lato',sans-serif;font-style:normal;font-weight:300;display:block;font-size:.44em;letter-spacing:.02em;line-height:1.5;margin-top:22px;opacity:.82}
-.hero-sub{font-size:18px;opacity:.78;line-height:1.78;margin-bottom:44px;text-align:justify;max-width:620px}
+.hero-sub{font-size:18px;opacity:.78;line-height:1.78;margin-bottom:44px;text-align:left;max-width:620px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
-.hero-side{border-left:1px solid var(--rule-dark);padding-left:34px;padding-bottom:8px}
+.hero-side{border-left:1px solid var(--rule-dark);padding-left:34px;padding-bottom:8px;margin-top:58px}
 .hero-side .k{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:46px;line-height:1;color:var(--gold)}
 .hero-side .l{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.62;margin-top:12px;line-height:1.6}
 .hero-side .div{height:1px;background:var(--rule-dark);margin:26px 0}
@@ -136,16 +137,17 @@ header.stuck .brandmark img{width:28px}
 .light .btn-g:hover{border-color:var(--gold);background:var(--gold);color:var(--navy)}
 
 /* ---------- CONSTAT ---------- */
-.sec-head{max-width:760px;margin-bottom:70px}
+.sec-head{max-width:none;margin-bottom:70px}
 .constat{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule-light)}
 .dark .constat{border-color:var(--rule-dark)}
 .cbox{padding:46px 40px 46px 0;border-right:1px solid var(--rule-light);position:relative}
 .dark .cbox{border-color:var(--rule-dark)}
 .cbox:not(:first-child){padding-left:40px}
 .cbox:last-child{border-right:0;padding-right:0}
-.cbox .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--gold);display:block;margin-bottom:18px;letter-spacing:.08em}
-.cbox h3{margin-bottom:14px}
-.cbox p{font-size:16px;opacity:.8;line-height:1.72;text-align:justify}
+.cbox .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--gold);letter-spacing:.08em;flex:0 0 auto;opacity:.85}
+.cbox .hd{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.cbox h3{margin:0}
+.cbox p{font-size:16px;opacity:.8;line-height:1.72;text-align:left}
 .pivot{
   margin-top:64px;padding-top:40px;border-top:1px solid var(--rule-light);
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -164,7 +166,7 @@ header.stuck .brandmark img{width:28px}
 }
 .portrait .cap{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.62;line-height:1.7}
 .portrait .cap em{font-family:'Cormorant Garamond',serif;font-style:italic;text-transform:none;letter-spacing:.02em;font-size:15px;color:var(--gold);display:block;margin-top:6px}
-.mission-body p{margin-bottom:22px;font-size:17.5px;line-height:1.8;opacity:.88;text-align:justify}
+.mission-body p{margin-bottom:22px;font-size:17.5px;line-height:1.8;opacity:.88;text-align:left}
 .quote{
   margin-top:44px;padding:34px 0 0;border-top:1px solid var(--rule-light);
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -192,8 +194,8 @@ header.stuck .brandmark img{width:28px}
 }
 .card.hero-card .badge{background:rgba(198,169,120,.1);border-color:var(--gold);color:var(--gold)}
 .card h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:27px;line-height:1.2;margin-bottom:18px}
-.card .hook{font-size:16px;line-height:1.7;opacity:.86;margin-bottom:22px;text-align:justify}
-.card .body{font-size:15px;line-height:1.72;opacity:.68;margin-bottom:26px;text-align:justify}
+.card .hook{font-size:16px;line-height:1.7;opacity:.86;margin-bottom:22px;text-align:left}
+.card .body{font-size:15px;line-height:1.72;opacity:.68;margin-bottom:26px;text-align:left}
 .card .out{
   font-size:14.5px;line-height:1.65;padding-top:24px;border-top:1px solid var(--rule-dark);
   margin-top:auto;margin-bottom:28px;
@@ -204,7 +206,7 @@ header.stuck .brandmark img{width:28px}
 
 /* ---------- RESULTATS ---------- */
 .res-head{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:end;margin-bottom:64px}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--rule-light)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule-light)}
 .stat{padding:40px 24px 0 0;border-right:1px solid var(--rule-light)}
 .stat:not(:first-child){padding-left:24px}
 .stat:last-child{border-right:0;padding-right:0}
@@ -218,9 +220,46 @@ header.stuck .brandmark img{width:28px}
 .step{padding:44px 30px 0 0;border-right:1px solid var(--rule-dark);position:relative}
 .step:not(:first-child){padding-left:30px}
 .step:last-child{border-right:0;padding-right:0}
-.step .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;color:var(--gold);line-height:1;display:block;margin-bottom:20px}
-.step h3{font-size:17px;margin-bottom:12px}
-.step p{font-size:15px;opacity:.72;line-height:1.7;text-align:justify}
+.step .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:var(--gold);line-height:1;flex:0 0 auto}
+.step .hd{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.step h3{font-size:17px;margin:0}
+.step p{font-size:15px;opacity:.72;line-height:1.7;text-align:left}
+
+
+/* ---------- CALCULATEUR ---------- */
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:56px}
+.calc-fields{display:grid;gap:26px}
+.cf label{display:block;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.62;margin-bottom:10px}
+.cf input{
+  width:100%;background:transparent;border:0;border-bottom:1px solid var(--rule-dark);
+  color:var(--ivory);font-family:'Lato',sans-serif;font-weight:300;font-size:22px;
+  padding:6px 0 10px;outline:none;transition:border-color .3s
+}
+.cf input:focus{border-color:var(--gold)}
+.cf .hint{font-size:12.5px;opacity:.42;margin-top:8px;line-height:1.5}
+.calc-out{border-left:1px solid var(--rule-dark);padding-left:46px}
+.calc-out .rowk{padding:22px 0;border-bottom:1px solid var(--rule-dark)}
+.calc-out .rowk:last-of-type{border-bottom:0}
+.calc-out .rk{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin-bottom:10px;line-height:1.6}
+.calc-out .rv2{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:40px;line-height:1;color:var(--gold)}
+.calc-out .rv2.big{font-size:54px}
+.calc-note{font-size:13px;opacity:.5;line-height:1.7;margin-top:26px}
+.calc-cta{margin-top:34px}
+@media(max-width:900px){
+  .calc-grid{grid-template-columns:1fr;gap:44px}
+  .calc-out{border-left:0;border-top:1px solid var(--rule-dark);padding:34px 0 0}
+}
+
+
+.calc-scenario{margin-top:30px;padding:28px 0 4px;border-top:1px solid var(--rule-dark)}
+.sc-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--ivory);opacity:.9;margin-bottom:20px}
+.sc-line{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:13px 0;font-size:15px;opacity:.78;line-height:1.6}
+.sc-line b{font-weight:300;font-size:19px;white-space:nowrap;opacity:.95}
+.sc-line.net{border-top:1px solid var(--rule-dark);margin-top:8px;padding-top:18px;opacity:1}
+.sc-line.net span{font-size:16px}
+.sc-line.net b{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;color:var(--gold)}
+.sc-line input{width:52px;background:transparent;border:0;border-bottom:1px solid var(--rule-dark);color:var(--gold);font-family:'Lato',sans-serif;font-size:15px;padding:0 0 2px;text-align:center;outline:none}
+.sc-line input:focus{border-color:var(--gold)}
 
 /* ---------- FAQ ---------- */
 .faq{max-width:880px;margin:0 auto;border-top:1px solid var(--rule-light)}
@@ -240,7 +279,7 @@ header.stuck .brandmark img{width:28px}
 }
 .q.open button::before{transform:scaleY(0);opacity:0}
 .q .a{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1)}
-.q .a p{padding:0 0 30px 0;font-size:16.5px;line-height:1.78;opacity:.8;text-align:justify}
+.q .a p{padding:0 0 30px 0;font-size:16.5px;line-height:1.78;opacity:.8;text-align:left}
 
 /* ---------- CONTACT ---------- */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:start}
@@ -288,7 +327,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
 .modal-content h2{
   font-family:'Cormorant Garamond',serif;font-style:italic;font-size:32px;margin-bottom:28px;
 }
-.modal-content p{font-size:15.5px;line-height:1.8;margin-bottom:20px;text-align:justify}
+.modal-content p{font-size:15.5px;line-height:1.8;margin-bottom:20px;text-align:left}
 .modal-content strong{font-weight:400;color:var(--navy)}
 .modal-content a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
 .modal-content .eyebrow{text-align:left}
@@ -304,7 +343,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;
   justify-content:space-between;gap:28px;flex-wrap:wrap;
 }
-.cookie-inner p{font-size:13.5px;line-height:1.65;opacity:.82;max-width:640px;text-align:justify}
+.cookie-inner p{font-size:13.5px;line-height:1.65;opacity:.82;max-width:640px;text-align:left}
 .cookie-actions{display:flex;gap:12px;flex-shrink:0}
 .cookie-actions .btn{padding:12px 24px;font-size:11px}
 @media(max-width:640px){
@@ -320,7 +359,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:1000px){
   .hero-grid,.mission-grid,.res-head,.contact-grid{grid-template-columns:1fr;gap:48px}
-  .hero-side{border-left:0;border-top:1px solid var(--rule-dark);padding:30px 0 0}
+  .hero-side{border-left:0;border-top:1px solid var(--rule-dark);padding:30px 0 0;margin-top:0}
   .offers{grid-template-columns:1fr;gap:20px}
   .card.hero-card{transform:none}
   .card.hero-card:hover{transform:translateY(-9px)}
@@ -334,13 +373,14 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   .stat:not(:first-child){padding-left:0}
   .portrait::after{display:none}
 }
-@media(max-width:1080px){
+@media(max-width:1200px){
   .links{
     position:fixed;inset:0;background:var(--navy);flex-direction:column;
     justify-content:center;gap:26px;transform:translateX(100%);transition:transform .5s cubic-bezier(.22,.61,.36,1);
   }
   .links.open{transform:none}
   .links a{font-size:15px}
+  .nav-sec{display:block}
   .burger{display:block;z-index:70;position:relative}
 }
 @media(max-width:760px){
@@ -370,10 +410,11 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
       <a href="#constat">Le constat</a>
       <a href="#mission">La méthode</a>
       <a href="#offres">Nos solutions</a>
+      <a href="#calculateur">Votre chiffre</a>
       <a href="#resultats">Résultats</a>
-      <a href="#formation">Formation</a>
+      <a href="#formation" class="nav-sec">Formation</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact" class="navcta">Réserver 30 minutes</a>
+      <a href="#contact" class="navcta">Réserver 30 min</a>
     </nav>
     <button class="burger" id="bg" aria-label="Ouvrir le menu"><span></span><span></span></button>
   </div>
@@ -384,19 +425,19 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow rv"><span></span>Hôtels indépendants 4 et 5 étoiles</p>
+        <p class="eyebrow rv"><span></span>Hôtels indépendants 4-5 étoiles · Groupes multi-établissements</p>
         <h1 class="rv d1">Plus de direct. Moins de commissions. Plus de marge.
           <span class="plain">La méthode d'une ancienne directrice, appliquée à votre établissement.</span>
         </h1>
-        <p class="hero-sub rv d2">Ancienne directrice d'établissement 4 étoiles, j'accompagne les hôteliers indépendants sur l'acquisition directe, le pilotage marketing et la stratégie commerciale.</p>
+        <p class="hero-sub rv d2">Ancienne directrice d'établissement 4 étoiles, j'accompagne les hôtels indépendants et les groupes multi-établissements sur l'acquisition directe, le pilotage marketing et la stratégie commerciale.</p>
         <div class="hero-actions rv d3">
           <a href="#contact" class="btn btn-p">Réserver 30 minutes</a>
           <a href="#offres" class="btn btn-g">Voir les offres</a>
         </div>
       </div>
       <aside class="hero-side rv d4">
-        <div class="k" data-count="21" data-suffix=" %">21 %</div>
-        <div class="l">de réservations directes via le site web, contre 7 % au départ</div>
+        <div class="k" data-count="65" data-suffix=" %">65 %</div>
+        <div class="l">de réservations directes, contre 40 % au départ</div>
         <div class="div"></div>
         <div class="k">×29<em style="font-style:italic;font-size:.4em;opacity:.6;display:block;margin-top:6px;letter-spacing:.08em;text-transform:uppercase">minimum</em></div>
         <div class="l">de retour sur investissement metasearch</div>
@@ -415,18 +456,15 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
     </div>
     <div class="constat">
       <div class="cbox rv">
-        <span class="num">i.</span>
-        <h3>La dépendance qu'on n'a jamais chiffrée</h3>
+        <div class="hd"><span class="num">i.</span><h3>La dépendance non chiffrée</h3></div>
         <p>Les commissions versées aux plateformes tierces sont visibles ligne par ligne. Leur coût réel, rapporté au chiffre d'affaires hébergement, ne l'est presque jamais.</p>
       </div>
       <div class="cbox rv d1">
-        <span class="num">ii.</span>
-        <h3>Le pilotage en solitaire</h3>
+        <div class="hd"><span class="num">ii.</span><h3>Le pilotage en solitaire</h3></div>
         <p>Pas de comité de direction, pas de second regard sur les arbitrages. Les décisions se prennent seul, et personne ne les challenge.</p>
       </div>
       <div class="cbox rv d2">
-        <span class="num">iii.</span>
-        <h3>Des prestataires en silo</h3>
+        <div class="hd"><span class="num">iii.</span><h3>Des prestataires en silo</h3></div>
         <p>Agence web, revenue manager, CRM. Chacun optimise sa brique. Personne n'orchestre la cohérence de l'ensemble.</p>
       </div>
     </div>
@@ -444,16 +482,18 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
       </div>
       <div class="mission-body">
         <p class="eyebrow rv"><span></span>Votre direction stratégique dédiée</p>
-        <h2 class="rv d1">Une méthode de terrain,<br>trois piliers de performance</h2>
-        <p class="rv d2">J'ai vécu la réalité de vos contraintes depuis le bureau de direction : l'exigence de rentabilité, la complexité de l'écosystème digital, et cette solitude du décideur face à l'urgence.</p>
+        <h2 class="rv d1">Une méthode de terrain,<br>quatre piliers de performance</h2>
+        <p class="rv d2">J'ai vécu la réalité de vos contraintes depuis le bureau de direction : l'exigence de rentabilité, la complexité de l'écosystème digital, et l'opérationnel qui absorbe l'espace de réflexion stratégique.</p>
         <p class="rv d2">J'ai fondé SZE Hotel Consulting pour doter les hôteliers indépendants des leviers stratégiques des grandes chaînes : un pilotage structuré autour de l'ingénierie commerciale, de l'acquisition directe et de l'excellence client.</p>
-        <p class="rv d3">Ici, pas de rapports théoriques. Je transforme vos données en décisions commerciales.</p>
+        <p class="rv d3">Ici, pas de rapports théoriques. Je consolide vos données dispersées entre PMS, channel manager, CRM et outils d'acquisition, et j'en tire une lecture unique de votre performance commerciale.</p>
+        <p class="rv d3">La donnée n'est pas la finalité. Elle sert à décider où placer vos efforts, vos budgets et le temps de vos équipes. La data au service de l'humain, pas l'inverse.</p>
         <blockquote class="quote rv d3">Je ne remplace pas votre vision. Je suis la force motrice qui transforme vos données en décisions, et vos décisions en résultats.
           <span class="sig">Sylvia Zué Eyi</span>
         </blockquote>
         <div class="pillars rv d4">
           <div>Stratégie commerciale</div>
           <div>Acquisition directe</div>
+          <div>Pilotage par la donnée</div>
           <div>Excellence client</div>
         </div>
       </div>
@@ -476,7 +516,7 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
         <p class="hook">Vous savez que les plateformes tierces vous coûtent cher. Vous ne savez pas combien exactement.</p>
         <p class="body">Je lis votre production sur douze mois, canal par canal, et je la croise avec le coût réel de vos commissions. Un export PMS et un accès en lecture à Google Analytics suffisent à démarrer.</p>
         <p class="out"><span>Bénéfice clé</span>Plus de réservations en direct, moins de commissions versées, une marge qui progresse en conséquence.</p>
-        <a href="#contact" class="btn btn-g">Voir mon chiffre</a>
+        <a href="#calculateur" class="btn btn-g">Voir mon chiffre</a>
       </article>
       <article class="card hero-card rv d2">
         <span class="badge">Le plus choisi</span>
@@ -499,6 +539,63 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
   </div>
 </section>
 
+<!-- CALCULATEUR -->
+<section class="dark" id="calculateur">
+  <div class="wrap">
+    <p class="eyebrow rv"><span></span>Votre chiffre</p>
+    <h2 class="rv d1">Combien vous coûtent réellement<br>les plateformes tierces ?</h2>
+    <p class="lede rv d2">Ce calcul part de vos propres données, pas d'une moyenne de marché. Il ne dit pas ce que vous pourriez gagner : il dit ce que vous versez déjà.</p>
+
+    <div class="calc-grid rv d2">
+      <div class="calc-fields">
+        <div class="cf">
+          <label for="c-nuitees">Nuitées vendues par an</label>
+          <input id="c-nuitees" type="number" inputmode="numeric" value="20000" min="0" step="100">
+          <div class="hint">Chambres × 365 × taux d'occupation. Pour 100 chambres à 75 %, environ 27 000.</div>
+        </div>
+        <div class="cf">
+          <label for="c-adr">Prix moyen par nuitée, en euros</label>
+          <input id="c-adr" type="number" inputmode="decimal" value="220" min="0" step="5">
+          <div class="hint">Hors taxes, hébergement seul.</div>
+        </div>
+        <div class="cf">
+          <label for="c-part">Part intermédiée, en %</label>
+          <input id="c-part" type="number" inputmode="numeric" value="60" min="0" max="100" step="1">
+          <div class="hint">Part des nuitées issues des plateformes tierces.</div>
+        </div>
+        <div class="cf">
+          <label for="c-com">Taux de commission effectif, en %</label>
+          <input id="c-com" type="number" inputmode="decimal" value="20" min="0" max="60" step="0.5">
+          <div class="hint">Taux réellement supporté, programmes de visibilité inclus. Souvent supérieur au taux contractuel.</div>
+        </div>
+      </div>
+
+      <div class="calc-out">
+        <div class="rowk">
+          <div class="rk">Chiffre d'affaires hébergement intermédié</div>
+          <div class="rv2" id="c-ca">&mdash;</div>
+        </div>
+        <div class="rowk">
+          <div class="rk">Commissions versées chaque année</div>
+          <div class="rv2 big" id="c-commissions">&mdash;</div>
+        </div>
+
+        <div class="calc-scenario">
+          <p class="sc-title">Si 5 points de mix basculent vers le direct</p>
+          <div class="sc-line"><span>Commissions qui ne sont plus versées</span><b id="c-evite">&mdash;</b></div>
+          <div class="sc-line"><span>Coût de génération de ce direct, à <input id="c-direct" type="number" value="10" min="0" max="30" step="0.5"> % du chiffre d'affaires</span><b id="c-cout">&mdash;</b></div>
+          <div class="sc-line net"><span>Gain net annuel</span><b id="c-gain">&mdash;</b></div>
+        </div>
+
+        <p class="calc-note">Le direct n'est pas gratuit : budget média, commission du moteur de réservation, métamoteurs et frais bancaires. Il reste nettement moins coûteux que l'intermédiation, et une partie de ce budget sert aussi le direct déjà existant.</p>
+        <div class="calc-cta">
+          <a href="#contact" class="btn">Faire lire ce chiffre dans votre contexte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- RESULTATS -->
 <section class="light" id="resultats">
   <div class="wrap">
@@ -510,10 +607,11 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
       <p class="lede rv d2">Résultats constatés entre 2021 et 2024 sur un établissement accompagné.</p>
     </div>
     <div class="stats">
-      <div class="stat rv"><div class="v">7 %<em>→</em>21 %</div><div class="l">de réservations directes via le site web, en moins de six mois</div></div>
-      <div class="stat rv d1"><div class="v">×29 <span style="font-size:.42em;opacity:.55">min.</span></div><div class="l">de retour sur investissement metasearch, sur le canal direct</div></div>
-      <div class="stat rv d2"><div class="v">76<em>→</em>92</div><div class="l">de satisfaction client, sur 100</div></div>
-      <div class="stat rv d3"><div class="v">318<em>→</em>1 000</div><div class="l">avis en ligne récoltés par an</div></div>
+      <div class="stat rv"><div class="v">40 %<em>→</em>65 %</div><div class="l">de réservations directes dans le mix de distribution</div></div>
+      <div class="stat rv d1"><div class="v">7 %<em>→</em>21 %</div><div class="l">du mix généré par le site web, soit trois fois plus</div></div>
+      <div class="stat rv d2"><div class="v">×29 <span style="font-size:.42em;opacity:.55">min.</span></div><div class="l">de retour sur investissement metasearch, sur le canal direct</div></div>
+      <div class="stat rv d3"><div class="v">76<em>→</em>92</div><div class="l">de satisfaction client, sur 100</div></div>
+      <div class="stat rv d4"><div class="v">318<em>→</em>1 000</div><div class="l">avis en ligne récoltés par an</div></div>
       <div class="stat rv d4"><div class="v">100 k€</div><div class="l">générés par deux campagnes CRM</div></div>
     </div>
     <p class="legal rv d2">Résultats propres à un établissement et à son contexte. Mon engagement porte sur les moyens déployés, pas sur la reproduction de ces résultats.</p>
@@ -530,18 +628,15 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
     </div>
     <div class="constat">
       <div class="cbox rv">
-        <span class="num">i.</span>
-        <h3>Hôtellerie & restauration</h3>
+        <div class="hd"><span class="num">i.</span><h3>Hôtellerie & restauration</h3></div>
         <p>Posture d'accueil, sens du détail, gestion des situations sensibles face au client.</p>
       </div>
       <div class="cbox rv d1">
-        <span class="num">ii.</span>
-        <h3>Tous métiers de service</h3>
+        <div class="hd"><span class="num">ii.</span><h3>Tous métiers de service</h3></div>
         <p>Banques, assurances, entreprises, structures de santé : partout où un client est reçu, l'excellence relationnelle se travaille.</p>
       </div>
       <div class="cbox rv d2">
-        <span class="num">iii.</span>
-        <h3>Formats sur mesure</h3>
+        <div class="hd"><span class="num">iii.</span><h3>Formats sur mesure</h3></div>
         <p>Du programme sectoriel structuré à l'accompagnement construit sur les besoins précis de vos équipes.</p>
       </div>
     </div>
@@ -559,10 +654,10 @@ footer{background:var(--navy);color:var(--ivory);padding:52px 0;border-top:1px s
       <h2 class="rv d1">Comment nous travaillons ensemble</h2>
     </div>
     <div class="steps">
-      <div class="step rv"><span class="n">01</span><h3>Premier échange, offert</h3><p>Trente minutes pour comprendre votre contexte, vos priorités, et vérifier que l'intervention a du sens.</p></div>
-      <div class="step rv d1"><span class="n">02</span><h3>Lecture de vos données</h3><p>Je pars de votre production réelle, pas d'un modèle générique ni d'une moyenne de marché.</p></div>
-      <div class="step rv d2"><span class="n">03</span><h3>Restitution et arbitrages</h3><p>Vous recevez une lecture priorisée. Vous décidez de ce que vous activez, et à quel rythme.</p></div>
-      <div class="step rv d3"><span class="n">04</span><h3>Pilotage dans la durée</h3><p>Si vous me confiez le pilotage, j'orchestre les leviers et je coordonne vos prestataires existants.</p></div>
+      <div class="step rv"><div class="hd"><span class="n">01</span><h3>Premier échange, offert</h3></div><p>Trente minutes pour comprendre votre contexte, vos priorités, et vérifier que l'intervention a du sens.</p></div>
+      <div class="step rv d1"><div class="hd"><span class="n">02</span><h3>Lecture de vos données</h3></div><p>Je pars de votre production réelle, pas d'un modèle générique ni d'une moyenne de marché.</p></div>
+      <div class="step rv d2"><div class="hd"><span class="n">03</span><h3>Restitution et arbitrages</h3></div><p>Vous recevez une lecture priorisée. Vous décidez de ce que vous activez, et à quel rythme.</p></div>
+      <div class="step rv d3"><div class="hd"><span class="n">04</span><h3>Pilotage dans la durée</h3></div><p>Si vous me confiez le pilotage, j'orchestre les leviers et je coordonne vos prestataires existants.</p></div>
     </div>
   </div>
 </section>
@@ -698,7 +793,14 @@ lk.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function
 var io=new IntersectionObserver(function(es){
   es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
 },{threshold:.08,rootMargin:'0px 0px -6% 0px'});
-document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+document.querySelectorAll('.rv').forEach(function(el){
+  var r=el.getBoundingClientRect();
+  if(r.top<innerHeight && r.bottom>0){
+    el.classList.add('in');
+  }else{
+    io.observe(el);
+  }
+});
 
 // faq
 document.querySelectorAll('.q button').forEach(function(b){
@@ -747,6 +849,38 @@ document.getElementById('cookieRefuse').addEventListener('click',function(){
 document.getElementById('reopenCookies').addEventListener('click',function(){
   cookieBanner.classList.add('show');
 });
+</script>
+
+<script>
+(function(){
+  var ids=['c-nuitees','c-adr','c-part','c-com','c-direct'];
+  var els={},ok=true;
+  ids.forEach(function(i){els[i]=document.getElementById(i); if(!els[i])ok=false;});
+  var o={ca:'c-ca',co:'c-commissions',ev:'c-evite',ct:'c-cout',ga:'c-gain'},out={};
+  for(var k in o){out[k]=document.getElementById(o[k]); if(!out[k])ok=false;}
+  if(!ok) return;
+  function eur(n){
+    if(!isFinite(n)) return '\u2014';
+    return Math.round(n).toLocaleString('fr-FR').replace(/\u202f/g,' ')+' \u20ac';
+  }
+  function calc(){
+    var n=parseFloat(els['c-nuitees'].value)||0,
+        a=parseFloat(els['c-adr'].value)||0,
+        p=Math.min(Math.max((parseFloat(els['c-part'].value)||0)/100,0),1),
+        c=(parseFloat(els['c-com'].value)||0)/100,
+        d=(parseFloat(els['c-direct'].value)||0)/100;
+    var caTotal=n*a, caInter=caTotal*p, com=caInter*c;
+    var bascule=caTotal*0.05;
+    var evite=bascule*c, cout=bascule*d, gain=evite-cout;
+    out.ca.textContent=eur(caInter);
+    out.co.textContent=eur(com);
+    out.ev.textContent=eur(evite);
+    out.ct.textContent='\u2212 '+eur(cout);
+    out.ga.textContent=eur(gain);
+  }
+  ids.forEach(function(i){els[i].addEventListener('input',calc);});
+  calc();
+})();
 </script>
 </body>
 </html>
